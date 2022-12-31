@@ -3,9 +3,13 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 function Categories() {
   return (
-    <div className="my-10">
+    <div
+      style={{
+        marginTop: "20px",
+      }}
+    >
       <h1 className="text-2xl text-black font-bold">Read By Categories</h1>
-      <div className="mt-10" id="categories">
+      <div id="categories">
         <div id="category">
           <Player
             autoplay={true}
