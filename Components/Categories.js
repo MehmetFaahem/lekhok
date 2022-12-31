@@ -5,8 +5,11 @@ function Categories() {
   return (
     <div className="my-10">
       <h1 className="text-2xl text-black font-bold">Read By Categories</h1>
-      <div className="mt-10 grid grid-cols-3 gap-3">
-        <div className="justify-center cursor-pointer h-48 w-48 bg-slate-200 flex flex-col place-items-center rounded-xl">
+      <div className="mt-10" id="categories">
+        <div
+          id="category"
+          className="justify-center cursor-pointer h-48 w-48 bg-slate-200 flex flex-col place-items-center rounded-xl"
+        >
           <Player
             autoplay={true}
             loop={true}
@@ -16,7 +19,10 @@ function Categories() {
           <h3>Programming</h3>
         </div>
 
-        <div className="justify-center cursor-pointer h-48 w-48 bg-slate-200 flex flex-col place-items-center rounded-xl">
+        <div
+          id="category"
+          className="justify-center cursor-pointer h-48 w-48 bg-slate-200 flex flex-col place-items-center rounded-xl"
+        >
           <Player
             autoplay={true}
             loop={true}
@@ -26,7 +32,10 @@ function Categories() {
           <h3>World</h3>
         </div>
 
-        <div className="justify-center cursor-pointer h-48 w-48 bg-slate-200 flex flex-col place-items-center rounded-xl">
+        <div
+          id="category"
+          className="justify-center cursor-pointer h-48 w-48 bg-slate-200 flex flex-col place-items-center rounded-xl"
+        >
           <Player
             autoplay={true}
             loop={true}
@@ -36,7 +45,10 @@ function Categories() {
           <h3>Health and Fitness</h3>
         </div>
 
-        <div className="justify-center cursor-pointer h-48 w-48 bg-slate-200 flex flex-col place-items-center rounded-xl">
+        <div
+          id="category"
+          className="justify-center cursor-pointer h-48 w-48 bg-slate-200 flex flex-col place-items-center rounded-xl"
+        >
           <Player
             autoplay={true}
             loop={true}
@@ -46,7 +58,10 @@ function Categories() {
           <h3>Lifestyle</h3>
         </div>
 
-        <div className="justify-center cursor-pointer h-48 w-48 bg-slate-200 flex flex-col place-items-center rounded-xl">
+        <div
+          id="category"
+          className="justify-center cursor-pointer h-48 w-48 bg-slate-200 flex flex-col place-items-center rounded-xl"
+        >
           <Player
             autoplay={true}
             loop={true}
@@ -56,7 +71,10 @@ function Categories() {
           <h3>Business</h3>
         </div>
 
-        <div className="justify-center cursor-pointer h-48 w-48 bg-slate-200 flex flex-col place-items-center rounded-xl">
+        <div
+          id="category"
+          className="justify-center cursor-pointer h-48 w-48 bg-slate-200 flex flex-col place-items-center rounded-xl"
+        >
           <Player
             autoplay={true}
             loop={true}
