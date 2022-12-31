@@ -25,7 +25,9 @@ function Legister() {
         <button className="bg-blue-900 w-96 hover:bg-blue-700 text-white p-3">
           Log In
         </button>
-        <p className="text-center">Haven't Registered ? So you should...</p>
+        <p className="text-center">
+          Haven&apos;t Registered ? So you should...
+        </p>
         <Link href="/register">
           <button className="bg-blue-700 w-96 hover:bg-blue-900 text-white p-3">
             Register
