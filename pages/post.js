@@ -74,8 +74,12 @@ function Post() {
           className="text-xl rounded-2xl mt-2 p-3 border-2 border-slate-900 text-black"
         />
 
-        <BlogCreator settingExact={settingExact} />
-
+        <div
+          style={{ width: "710px", height: "auto" }}
+          className="p-4 rounded-2xl text-black bg-white mt-6 border-2 border-slate-900"
+        >
+          <BlogCreator settingExact={settingExact} />
+        </div>
         {/* <div
           style={{ width: "710px", height: "310px" }}
           className="p-4 rounded-2xl text-black bg-white mt-6 border-2 border-slate-900"
