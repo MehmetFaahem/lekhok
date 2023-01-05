@@ -38,9 +38,11 @@ function List() {
                 key={index}
               >
                 <h1 className="text-2xl font-bold">{blog.title}</h1>
-                <h1 id="max-lines" className="mt-6">
-                  {blog.description}
-                </h1>
+                <h1
+                  id="max-lines"
+                  className="mt-6"
+                  dangerouslySetInnerHTML={{ __html: blog.description }}
+                ></h1>
               </div>
             ))}
         </div>
