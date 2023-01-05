@@ -1,7 +1,43 @@
 import React from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
+import { useRouter } from "next/router";
+
+const CategorieList = [
+  {
+    id: 1,
+    name: "Programming",
+    lottie: "https://assets1.lottiefiles.com/packages/lf20_4kx2q32n.json",
+  },
+  {
+    id: 2,
+    name: "World",
+    lottie: "https://assets5.lottiefiles.com/packages/lf20_My3Zxm.json",
+  },
+  {
+    id: 3,
+    name: "Health and Fitness",
+    lottie: "https://assets9.lottiefiles.com/packages/lf20_nw19osms.json",
+  },
+  {
+    id: 4,
+    name: "Lifestyle",
+    lottie: "https://assets4.lottiefiles.com/packages/lf20_X6keQTFrdI.json",
+  },
+  {
+    id: 5,
+    name: "Business",
+    lottie: "https://assets7.lottiefiles.com/packages/lf20_slipwrv0.json",
+  },
+  {
+    id: 6,
+    name: "Book and Writings",
+    lottie: "https://assets9.lottiefiles.com/packages/lf20_ad3uxjiv.json",
+  },
+];
 
 function Categories() {
+  const router = useRouter();
+
   return (
     <div
       style={{
@@ -9,66 +45,28 @@ function Categories() {
       }}
     >
       <h1 className="text-2xl text-black font-bold">Read By Categories</h1>
+
       <div id="categories">
-        <div id="category">
-          <Player
-            autoplay={true}
-            loop={true}
-            src="https://assets1.lottiefiles.com/packages/lf20_4kx2q32n.json"
-            style={{ height: "100px", width: "100px" }}
-          ></Player>
-          <h3>Programming</h3>
-        </div>
-
-        <div id="category">
-          <Player
-            autoplay={true}
-            loop={true}
-            src="https://assets5.lottiefiles.com/packages/lf20_My3Zxm.json"
-            style={{ height: "100px", width: "100px" }}
-          ></Player>
-          <h3>World</h3>
-        </div>
-
-        <div id="category">
-          <Player
-            autoplay={true}
-            loop={true}
-            src="https://assets9.lottiefiles.com/packages/lf20_nw19osms.json"
-            style={{ height: "100px", width: "100px" }}
-          ></Player>
-          <h3>Health and Fitness</h3>
-        </div>
-
-        <div id="category">
-          <Player
-            autoplay={true}
-            loop={true}
-            src="https://assets4.lottiefiles.com/packages/lf20_X6keQTFrdI.json"
-            style={{ height: "100px", width: "100px" }}
-          ></Player>
-          <h3>Lifestyle</h3>
-        </div>
-
-        <div id="category">
-          <Player
-            autoplay={true}
-            loop={true}
-            src="https://assets7.lottiefiles.com/packages/lf20_slipwrv0.json"
-            style={{ height: "100px", width: "100px" }}
-          ></Player>
-          <h3>Business</h3>
-        </div>
-
-        <div id="category">
-          <Player
-            autoplay={true}
-            loop={true}
-            src="https://assets9.lottiefiles.com/packages/lf20_ad3uxjiv.json"
-            style={{ height: "100px", width: "100px" }}
-          ></Player>
-          <h3>Book and Writings</h3>
-        </div>
+        {CategorieList.map((category, index) => (
+          <div
+            onClick={() => {
+              router.push({
+                pathname: "/[blog]",
+                query: { blog: category.name },
+              });
+            }}
+            id="category"
+            key={index}
+          >
+            <Player
+              autoplay={true}
+              loop={true}
+              src={category.lottie}
+              style={{ height: "100px", width: "100px" }}
+            ></Player>
+            <h3>{category.name}</h3>
+          </div>
+        ))}
       </div>
     </div>
   );
