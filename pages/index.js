@@ -58,12 +58,20 @@ export const Heading = () => {
   return (
     <div
       id="heading"
+      style={{
+        width: "720px",
+      }}
       className="flex p-6 m-3 bg-white rounded-3xl place-items-center"
     >
       <div>
         <h1 className="text-2xl">Lekhok</h1>
       </div>
-      <div className="flex ml-72 space-x-3">
+      <div
+        style={{
+          marginLeft: "340px",
+        }}
+        className="flex space-x-3"
+      >
         {session ? (
           <>
             <Link href="/post">
@@ -98,7 +106,7 @@ export const Heading = () => {
         ) : (
           <>
             <Link href="/login">
-              <button className="p-3 bg-slate-800 text-white rounded-xl">
+              <button className="p-3 ml-20 bg-slate-800 text-white rounded-xl">
                 Log In
               </button>
             </Link>
