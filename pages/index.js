@@ -106,12 +106,12 @@ export const Heading = () => {
         ) : (
           <>
             <Link href="/login">
-              <button className="p-3 ml-20 bg-slate-800 text-white rounded-xl">
+              <button className="p-3 text-sm ml-20 bg-slate-800 text-white rounded-xl">
                 Log In
               </button>
             </Link>
             <Link href="/register">
-              <button className="p-3 bg-slate-800 text-white rounded-xl">
+              <button className="p-3 text-sm bg-slate-800 text-white rounded-xl">
                 Register
               </button>
             </Link>

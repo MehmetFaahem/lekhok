@@ -40,7 +40,7 @@ function List() {
                 <h1 className="text-2xl font-bold">{blog.title}</h1>
                 <h1
                   id="max-lines"
-                  className="mt-6"
+                  className="mt-6 font-normal"
                   dangerouslySetInnerHTML={{ __html: blog.description }}
                 ></h1>
               </div>
