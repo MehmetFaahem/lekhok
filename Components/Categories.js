@@ -33,6 +33,21 @@ const CategorieList = [
     name: "Book and Writings",
     lottie: "https://assets9.lottiefiles.com/packages/lf20_ad3uxjiv.json",
   },
+  {
+    id: 7,
+    name: "Education",
+    lottie: "https://assets8.lottiefiles.com/private_files/lf30_JenNba.json",
+  },
+  {
+    id: 8,
+    name: "Something",
+    lottie: "https://assets7.lottiefiles.com/private_files/lf30_KPNyqw.json",
+  },
+  {
+    id: 9,
+    name: "Something",
+    lottie: "https://assets7.lottiefiles.com/private_files/lf30_KPNyqw.json",
+  },
 ];
 
 function Categories() {

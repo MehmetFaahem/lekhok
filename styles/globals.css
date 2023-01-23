@@ -24,6 +24,7 @@ textarea:focus {
 #categories {
   display: grid;
   grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
   margin-top: 30px;
 }
 
